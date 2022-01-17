@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SBCEAK.Apresentacao</name>
+    </assembly>
+    <members>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorNomeOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
+             <summary>
+             Retorna a lista de Operações.
+             </summary>
+             <remarks>
+             Parâmetros:
+            
+              
+             Ds_Operacao (Tipo: String - Descrição da Operação).
+             </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.GravarOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
+            <summary>
+            Realiza a gravação dos dados de Operação.
+            </summary>
+            <remarks>
+            Parâmetros:
+            
+            Operacao_id (Tipo: integer - Chave Primária).
+             
+            Ds_Operacao (Tipo: String - Descrição da Operação).
+             
+            In_Situacao_Registro (Tipo: String - Status da Operação).
+            </remarks>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,8 @@
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\bin\Release\netstandard2.0\SBCEAK.Infraestrutura.deps.json
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\bin\Release\netstandard2.0\SBCEAK.Infraestrutura.dll
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\bin\Release\netstandard2.0\SBCEAK.Infraestrutura.pdb
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\Release\netstandard2.0\SBCEAK.Infraestrutura.AssemblyInfoInputs.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\Release\netstandard2.0\SBCEAK.Infraestrutura.AssemblyInfo.cs
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\Release\netstandard2.0\SBCEAK.Infraestrutura.csproj.CoreCompileInputs.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\Release\netstandard2.0\SBCEAK.Infraestrutura.dll
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\Release\netstandard2.0\SBCEAK.Infraestrutura.pdb

@@ -1,0 +1,9 @@
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\bin\Release\netstandard2.0\SBCEAK.Dominio.deps.json
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\bin\Release\netstandard2.0\SBCEAK.Dominio.dll
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\bin\Release\netstandard2.0\SBCEAK.Dominio.pdb
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Release\netstandard2.0\SBCEAK.Dominio.csprojAssemblyReference.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Release\netstandard2.0\SBCEAK.Dominio.AssemblyInfoInputs.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Release\netstandard2.0\SBCEAK.Dominio.AssemblyInfo.cs
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Release\netstandard2.0\SBCEAK.Dominio.csproj.CoreCompileInputs.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Release\netstandard2.0\SBCEAK.Dominio.dll
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Release\netstandard2.0\SBCEAK.Dominio.pdb

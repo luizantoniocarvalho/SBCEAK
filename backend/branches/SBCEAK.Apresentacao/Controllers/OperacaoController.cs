@@ -82,7 +82,7 @@ namespace SBCEAK.Apresentacao.Controllers
         /// 
         ///Ds_Operacao (Tipo: String - Descrição da Operação).
         /// 
-        ///In_Situacao_Registro (Tipo: String - Status da Operação).
+        ///In_Situacao_Registro (Tipo: Booleano - Status da Operação).
         ///</remarks>
         [HttpPost("GravarOperacao")]
         public IActionResult GravarOperacao(OperacaoModel operacaoModel)

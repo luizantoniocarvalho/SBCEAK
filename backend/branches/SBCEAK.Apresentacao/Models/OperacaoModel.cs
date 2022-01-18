@@ -6,7 +6,7 @@ namespace SBCEAK.Apresentacao.Models
     {
         public int      Operacao_id             { get; set; }
         public string   ds_Nome_Operacao        { get; set; }         
-        public string   in_Situacao_Registro    { get; set; }        
+        public bool     in_Situacao_Registro    { get; set; }        
 
         public static OperacaoModel EntidadeParaModel(Operacao operacao)
         {
@@ -14,7 +14,7 @@ namespace SBCEAK.Apresentacao.Models
             { 
                 Operacao_id             =   operacao.Operacao_id, 
                 ds_Nome_Operacao        =   operacao.ds_Nome_Operacao.ToUpper(),
-                in_Situacao_Registro    =   operacao.in_Situacao_Registro.ToUpper()
+                in_Situacao_Registro    =   operacao.in_Situacao_Registro
             };
         }
 
@@ -24,7 +24,7 @@ namespace SBCEAK.Apresentacao.Models
 
             solicitacao.Operacao_id             =   solicitacaoModel.Operacao_id;
             solicitacao.ds_Nome_Operacao        =   solicitacaoModel.ds_Nome_Operacao.ToUpper();
-            solicitacao.in_Situacao_Registro    =   solicitacaoModel.in_Situacao_Registro.ToUpper();
+            solicitacao.in_Situacao_Registro    =   solicitacaoModel.in_Situacao_Registro;
             
             return solicitacao;
         }

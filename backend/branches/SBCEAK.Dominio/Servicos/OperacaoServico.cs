@@ -1,11 +1,10 @@
 using System.Collections.Generic;
+using SBCEAK.Dominio;
 using SBCEAK.Dominio.Entidades;
 using SBCEAK.Dominio.Repositorios;
 using System.Linq.Expressions;
 using System;
 using System.Linq;
-//using Inca.Dominio;
-//using Inca.Dominio.Repositorios;
 
 namespace SBCEAK.Dominio.Servicos
 {

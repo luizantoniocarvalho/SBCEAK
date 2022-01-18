@@ -14,7 +14,7 @@ namespace SBCEAK.Dominio.Entidades
     { 
         public virtual int      Operacao_id             { get; set; }
         public virtual string   ds_Nome_Operacao        { get; set; }
-        public virtual string   in_Situacao_Registro    { get; set; }  
+        public virtual bool     in_Situacao_Registro    { get; set; }  
 
         public Operacao() { }
         

@@ -27,25 +27,33 @@ namespace SBCEAK.Dominio.Servicos
             }
         } 
 
+        public IList<Operacao> PesquisarPorTodasOperacoes()
+        {
+            using (operacaoRepositorio)
+            {
+                return operacaoRepositorio.PesquisarPorTodasOperacoes();
+            }
+        }
+
         public int GravarOperacao(Dominio.Entidades.Operacao solicitacao)   
         {
             using(operacaoRepositorio)
             {
                 try
                 {
-                    if (solicitacao.Operacao_id != 0)
+                    if (solicitacao.operacao_id != 0)
                     {
                         //Alteração.
                         operacaoRepositorio.Salvar(solicitacao);
 
-                        return solicitacao.Operacao_id;
+                        return solicitacao.operacao_id;
                     }
                     else
                     {
                         //Inclusão
                         operacaoRepositorio.Salvar(solicitacao);
 
-                        return solicitacao.Operacao_id;
+                        return solicitacao.operacao_id;
                     }
                 }
                 catch (System.Exception e)

@@ -18,10 +18,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using SBCEAK.Util;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;  
 using Swashbuckle.AspNetCore.SwaggerUI;
-using SBCEAK.Util;
 
 namespace SBCEAK.Apresentacao
 {

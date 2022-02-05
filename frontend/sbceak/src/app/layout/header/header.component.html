@@ -1,0 +1,42 @@
+<mat-drawer-container>
+  <mat-drawer #drawer>
+    <h3>Menu</h3>
+    <mat-divider></mat-divider>
+    <mat-action-list>
+      <button mat-list-item routerLink="" role="listitem" (click)="onClick()">
+        <mat-icon mat-list-icon>home</mat-icon>
+        Home
+      </button>
+
+      <button mat-list-item routerLink="/operacoes" role="listitem" (click)="onClick()">
+        <mat-icon mat-list-icon>settings</mat-icon>
+        Operações
+      </button>
+    </mat-action-list>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <mat-toolbar color="primary" fxLayout="row" fxLayoutGap="15px" fxLayout.xl="column" [ngStyle.xs]="{'height': 'auto'}">
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()" fxFlex="35px" fxLayoutAlign="start">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div class="titulo" fxFlex fxLayoutAlign="start">
+        <h1 >SBCEAK <span> {{ titulo! }} </span> </h1>
+      </div>
+
+      <div class="usuario" fxFlex fxLayoutAlign="end" >
+        Usuário: 000000 - Usuário de Homologação
+      </div>
+
+      <div class="logo" fxFlex="100px" fxLayoutAlign="end">
+        <img src="../../../assets/Kardec.JPG" alt="SBCEAK" height="50px">
+      </div>
+    </mat-toolbar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-drawer-content>
+</mat-drawer-container>

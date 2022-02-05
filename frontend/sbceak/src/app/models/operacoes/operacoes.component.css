@@ -1,0 +1,42 @@
+.mat-form-field {
+  width: 250px;
+}
+
+.mat-card-header
+{
+  background-color: gray !important;
+  padding:5px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+}
+
+.div-operacao
+{
+  /* superior | direita | inferior | esquerda */
+  padding: 1em 1px 1em 1px;
+}
+
+.botao-novo {
+  float: right;
+  width: 10em;
+
+  /* superior | direita | inferior | esquerda */
+  padding: 2em Opx 2em Opx;
+}
+
+.campo-operacao
+{
+  /* superior | direita | inferior | esquerda */
+  padding: 0em 0em 0em 2em;
+}
+
+table
+{
+  width: 100%;
+}
+
+td, th
+{
+  width: 25%;
+}
+

@@ -72,6 +72,44 @@ namespace SBCEAK.Apresentacao.Controllers
             }
         }
 
+        /// <summary>
+        /// Retorna a lista de Operações.
+        /// </summary>
+        /// <remarks>
+        /// Parâmetros:
+        ///
+        /// </remarks>
+
+        [HttpGet("PesquisarPorTodasOperacoes")]
+        public JsonResult PesquisarPorTodasOperacoes()
+        {
+            try
+            {
+                IOperacaoRepositorio operacaoRepositorio = new OperacaoDAO(NHibernateSession.OpenSession<OperacaoMap>(configuration, "SBCEAK", Infraestrutura.Database.POSTGRE));              
+                OperacaoServico operacaoServico = new OperacaoServico(operacaoRepositorio);
+
+                IList<Operacao> operacaoList = new List<Operacao>();
+
+                operacaoList = operacaoServico.PesquisarPorTodasOperacoes();
+
+                var operacaoModel = new List<OperacaoModel>();
+
+                foreach (var operacao in operacaoList)
+                {
+                    operacaoModel.Add(OperacaoModel.EntidadeParaModel(operacao));
+                }                
+                HttpContext.Response.StatusCode = 200;
+
+                return new JsonResult(operacaoModel);
+            }
+            catch (DominioException e) { return new JsonResult(new { erro = e.Message }); }
+            catch (Exception)
+            {
+                HttpContext.Response.StatusCode = 500;
+                return new JsonResult(new { erro = "Ops! Ocorreu um erro no servidor." });
+            }
+        }
+
         ///<summary>
         ///Realiza a gravação dos dados de Operação.
         ///</summary>
@@ -99,7 +137,7 @@ namespace SBCEAK.Apresentacao.Controllers
 
                 operacaoServico.GravarOperacao(operacaoEditado);
 
-                return Ok(operacaoEditado.Operacao_id);
+                return Ok(operacaoEditado.operacao_id);
             }
             catch (System.Exception e)
             {

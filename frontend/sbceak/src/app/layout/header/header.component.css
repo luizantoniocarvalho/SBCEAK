@@ -1,0 +1,45 @@
+:host
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer
+{
+  width: 250px;
+
+  /*h3{
+    padding-left: 15px;
+  }*/
+}
+
+mat-drawer-container
+{
+  height: 100%;
+}
+
+mat-drawer-content
+{
+  padding: 0;
+  background-color: #BBBBBB;
+}
+
+.mat-toolbar
+{
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  /*background-color: blue;*/
+}
+
+.content
+{
+  padding: 20px;
+}
+
+.usuario
+{
+  font-size: 15px;
+  font-weight: bold;
+  /*color: black;*/
+}

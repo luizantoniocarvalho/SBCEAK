@@ -15,6 +15,15 @@
              Ds_Operacao (Tipo: String - Descrição da Operação).
              </remarks>
         </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorTodasOperacoes">
+             <summary>
+             Retorna a lista de Operações.
+             </summary>
+             <remarks>
+             Parâmetros:
+            
+             </remarks>
+        </member>
         <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.GravarOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
             <summary>
             Realiza a gravação dos dados de Operação.

@@ -9,7 +9,9 @@ namespace SBCEAK.Dominio.Repositorios
 {
     public interface IOperacaoRepositorio : IBaseRepositorio<Operacao>
     {
-        IList<Operacao> PesquisarPorNomeOperacao(string nome);       
+        IList<Operacao> PesquisarPorNomeOperacao(string nome);
+        
+        IList<Operacao> PesquisarPorTodasOperacoes();       
     }
 }
 

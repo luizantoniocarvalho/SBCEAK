@@ -17,10 +17,15 @@ namespace SBCEAK.Infraestrutura.DAO
         public OperacaoDAO(ISession session) : base(session)
         {
         }
+
         public IList<Operacao> PesquisarPorNomeOperacao(string nome)
         {
             return session.Query<Operacao>().Where(p => p.ds_Nome_Operacao.ToUpper().Contains(nome.ToUpper())).ToList();
-        }          
-  
+        }
+
+        public IList<Operacao> PesquisarPorTodasOperacoes()
+        {
+            return session.Query<Operacao>().ToList();
+        }
     }
 }

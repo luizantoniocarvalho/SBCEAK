@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SBCEAK.Apresentacao</name>
+    </assembly>
+    <members>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorTodasOperacoes">
+             <summary>
+             Retorna a lista de Operações.
+             </summary>
+             <remarks>
+             Parâmetros:
+            
+             </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorNomeOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
+             <summary>
+             Retorna a lista de Operações.
+             </summary>
+             <remarks>
+             Parâmetros:
+            
+              
+             Ds_Operacao (Tipo: String - Descrição da Operação).
+             </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorIdOperacao(System.Int32)">
+             <summary>
+             Retorna a operação com o ID passado.
+             </summary>
+             <remarks>
+             Parâmetros:
+            
+              
+             operacao_id (Tipo: Integer - ID da Operação).
+             </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.GravarOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
+            <summary>
+            Realiza a gravação dos dados de Operação.
+            </summary>
+            <remarks>
+            Parâmetros:
+            
+            Operacao_id (Tipo: integer - Chave Primária).
+             
+            Ds_Operacao (Tipo: String - Descrição da Operação).
+             
+            In_Situacao_Registro (Tipo: Booleano - Status da Operação).
+            </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.AlterarOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
+            <summary>
+            Realiza a alteração dos dados de Operação.
+            </summary>
+            <remarks>
+            Parâmetros:
+            
+            Operacao_id (Tipo: integer - Chave Primária).
+             
+            Ds_Operacao (Tipo: String - Descrição da Operação).
+             
+            In_Situacao_Registro (Tipo: Booleano - Status da Operação).
+            </remarks>
+        </member>
+    </members>
+</doc>

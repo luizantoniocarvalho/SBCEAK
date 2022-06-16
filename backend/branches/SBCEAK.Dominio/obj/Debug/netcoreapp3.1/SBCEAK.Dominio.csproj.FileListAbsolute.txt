@@ -1,9 +1,9 @@
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\bin\Debug\netcoreapp3.1\SBCEAK.Dominio.deps.json
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\bin\Debug\netcoreapp3.1\SBCEAK.Dominio.dll
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\bin\Debug\netcoreapp3.1\SBCEAK.Dominio.pdb
-C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Debug\netcoreapp3.1\SBCEAK.Dominio.csprojAssemblyReference.cache
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Debug\netcoreapp3.1\SBCEAK.Dominio.AssemblyInfoInputs.cache
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Debug\netcoreapp3.1\SBCEAK.Dominio.AssemblyInfo.cs
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Debug\netcoreapp3.1\SBCEAK.Dominio.csproj.CoreCompileInputs.cache
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Debug\netcoreapp3.1\SBCEAK.Dominio.dll
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Debug\netcoreapp3.1\SBCEAK.Dominio.pdb
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Dominio\obj\Debug\netcoreapp3.1\SBCEAK.Dominio.csprojAssemblyReference.cache

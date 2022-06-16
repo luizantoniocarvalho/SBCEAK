@@ -1,0 +1,9 @@
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\bin\release\netcoreapp3.1\SBCEAK.Infraestrutura.deps.json
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\bin\release\netcoreapp3.1\SBCEAK.Infraestrutura.dll
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\bin\release\netcoreapp3.1\SBCEAK.Dominio.dll
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\release\netcoreapp3.1\SBCEAK.Infraestrutura.csprojAssemblyReference.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\release\netcoreapp3.1\SBCEAK.Infraestrutura.AssemblyInfoInputs.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\release\netcoreapp3.1\SBCEAK.Infraestrutura.AssemblyInfo.cs
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\release\netcoreapp3.1\SBCEAK.Infraestrutura.csproj.CoreCompileInputs.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\release\netcoreapp3.1\SBCEAK.Infraestrutura.csproj.CopyComplete
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Infraestrutura\obj\release\netcoreapp3.1\SBCEAK.Infraestrutura.dll

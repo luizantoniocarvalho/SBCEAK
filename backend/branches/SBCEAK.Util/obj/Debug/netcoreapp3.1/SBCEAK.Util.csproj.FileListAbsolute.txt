@@ -1,9 +1,9 @@
-C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.csprojAssemblyReference.cache
-C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.AssemblyInfoInputs.cache
-C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.AssemblyInfo.cs
-C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.csproj.CoreCompileInputs.cache
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\bin\Debug\netcoreapp3.1\SBCEAK.Util.deps.json
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\bin\Debug\netcoreapp3.1\SBCEAK.Util.dll
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\bin\Debug\netcoreapp3.1\SBCEAK.Util.pdb
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.AssemblyInfoInputs.cache
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.AssemblyInfo.cs
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.csproj.CoreCompileInputs.cache
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.dll
 C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.pdb
+C:\Projetos\SBCEAK\backend\branches\SBCEAK.Util\obj\Debug\netcoreapp3.1\SBCEAK.Util.csprojAssemblyReference.cache

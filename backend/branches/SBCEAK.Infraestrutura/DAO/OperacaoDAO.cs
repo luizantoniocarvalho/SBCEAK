@@ -27,5 +27,17 @@ namespace SBCEAK.Infraestrutura.DAO
         {
             return session.Query<Operacao>().ToList();
         }
+
+        public IList<Operacao> PesquisarPorIdOperacao(int id)
+        {
+            return session.Query<Operacao>().Where(p => p.operacao_id == id).ToList();
+        }
+
+        // public IList<Operacao>AlterarStatusOperacao(int id)
+        // {
+        //     return null;
+        // }
+
+        
     }
 }

@@ -1,0 +1,22 @@
+<div mat-dialog-content>
+  <div class="dialog-title">
+    <h2 mat-dialog-title>Nova Operação</h2>
+    <mat-icon  (click)="cancel()" >close</mat-icon>
+  </div>
+
+  <form class="example-form" [formGroup]="operacaoForm" #clienteForm="ngForm">
+    <mat-form-field class="example-ful-width">
+      <mat-label>Operação: </mat-label>
+      <input matInput formControlName="ds_Nome_Operacao" name="ds_Nome_Operacao"
+      uppercase type="text" required placeholder="Digite uma nova operação.">
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button class="botao-cancelar-voltar" (click)="cancel()"
+  matTooltip="Cancelar a Inclusão.">Cancelar</button>
+  
+  <button mat-raised-button  class="botao-salvar" (click)="createOperacao()"
+  [disabled]="!clienteForm.form.valid" matTooltip="Salvar a Inclusão.">Salvar</button>
+</div>

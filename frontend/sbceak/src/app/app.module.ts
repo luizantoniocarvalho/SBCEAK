@@ -4,6 +4,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -23,15 +25,21 @@ import { OperacaoService } from '../app/services/operacao.service';
 import { TitleHeaderService } from '../app/services/title-header.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UppercaseInputDirectiveDirective } from './directive/uppercase-input-directive.directive';
 import { HeaderComponent } from './layout/header/header.component';
+import { OperacaoInsertModalComponent } from './models/dialog-modal/operacao-modal/operacao-insert-modal.component';
+import { OperacaoUpdateModalComponent } from './models/dialog-modal/operacao-modal/operacao-update-modal.component';
 import { OperacoesComponent } from './models/operacoes/operacoes.component';
 
-//import { FormGroup } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    OperacoesComponent
+    OperacoesComponent,
+    OperacaoInsertModalComponent,
+    OperacaoUpdateModalComponent,
+    UppercaseInputDirectiveDirective
   ],
   imports: [
     BrowserModule,
@@ -54,8 +62,9 @@ import { OperacoesComponent } from './models/operacoes/operacoes.component';
     MatPaginatorModule,
     MatSortModule,
     MatSlideToggleModule,
-    MatTooltipModule
-    //FormGroup
+    MatTooltipModule,
+    MatDialogModule,
+    MatNativeDateModule
   ],
   providers: [OperacaoService, TitleHeaderService],
   bootstrap: [AppComponent]

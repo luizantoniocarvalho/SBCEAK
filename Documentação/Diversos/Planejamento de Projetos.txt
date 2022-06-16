@@ -1,0 +1,13 @@
+Planejamento de Projetos
+
+1) SBCEAK
+
+2) SPCEAK
+
+3) SFCEAK
+
+4) SACBF (Sistema Administrativo do Condomínio Beija-Flor)
+    * Cadastro dos Condôminos (Ver Ficha de Cadstro);
+    * Cadastro de Visitantes (motorizados ou a pé);
+    * Cadastro de Entregadores (de bicicleta, moto ou carro - delevery, farmácia, uber, hortifrute, empresa de entrega, etc)
+    * Cadastro de Encomendas (deixada pelos correios)

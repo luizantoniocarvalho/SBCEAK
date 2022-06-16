@@ -11,7 +11,11 @@ namespace SBCEAK.Dominio.Repositorios
     {
         IList<Operacao> PesquisarPorNomeOperacao(string nome);
         
-        IList<Operacao> PesquisarPorTodasOperacoes();       
+        IList<Operacao> PesquisarPorTodasOperacoes();
+
+        IList<Operacao> PesquisarPorIdOperacao(int id);
+
+        // IList<Operacao> AlterarStatusOperacao(int id);
     }
 }
 

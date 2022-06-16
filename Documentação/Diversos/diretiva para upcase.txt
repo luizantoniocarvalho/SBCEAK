@@ -1,0 +1,113 @@
+no meu app.module.ts
+
+========================================
+// MODULES
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+
+// MAIN COMPONENT
+import { AppComponent } from './app.component';
+
+// COMPONENTS
+import { UserComponent } from './components/users/user.component';
+
+// DIRECTIVES
+import { UppercaseInputDirective } from './directives/uppercase-input.directive';
+
+@NgModule({
+  imports: [ 
+    BrowserModule, 
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  declarations: [ 
+    AppComponent, 
+    UserComponent,
+    UppercaseInputDirective
+  ],
+  bootstrap: [ 
+    AppComponent 
+  ]
+})
+export class AppModule { }
+======================================
+Crio na pasta Diretivas o uppercase-input.directive
+================================================
+import { Directive, ElementRef, HostListener } from '@angular/core';
+@Directive({
+  selector: '[uppercase]',
+  host: {
+    '(input)': '$event'
+  }
+})
+export class UppercaseInputDirective {
+
+  lastValue: string;
+
+  constructor(public ref: ElementRef) { }
+
+  @HostListener('input', ['$event']) onInput($event: any) 
+  {
+    var start = $event.target.selectionStart;
+    var end = $event.target.selectionEnd;
+    $event.target.value = $event.target.value.toUpperCase();
+    $event.target.setSelectionRange(start, end);
+    $event.preventDefault();
+
+    if (!this.lastValue || (this.lastValue && $event.target.value.length > 0 && this.lastValue !== $event.target.value)) {
+      this.lastValue = this.ref.nativeElement.value = $event.target.value;
+      // Propagation
+      const evt = document.createEvent('HTMLEvents');
+      evt.initEvent('input', false, true);
+      $event.target.dispatchEvent(evt);
+    }
+  }
+}
+================================
+No meu arquivo HTML eu jo chamo o seletor
+=======================================
+<div class="card">
+  <div class="card-body">
+    <form autocomplete="off" novalidate [formGroup]="data">
+      <div class="form-row">
+        <!-- NOME -->
+        <div class="col-md-6 mb-3">
+          <label for="input1">Nome *</label>
+          <input  type="text" class="form-control" id="input1" placeholder="Nome"
+                  formControlName="name"
+                  uppercase
+                  name="name"
+                  [ngClass]="{ 'is-invalid': form.name.errors && (form.name.touched || form.name.dirty) }"
+                  required />
+          <div class="invalid-feedback" *ngIf="form.name.errors && (form.name.dirty || form.name.touched)">
+            <div *ngIf="form.name.errors.required">* Campo obrigatório</div>
+          </div>
+        </div>
+        <!-- E-MAIL -->
+        <div class="form-group col-md-6">
+          <label for="input2">Email *</label>
+          <input  type="text" class="form-control" id="input2" placeholder="Email"
+                  formControlName="email"
+                  uppercase
+                  name="email"
+                  [ngClass]="{ 'is-invalid': form.email.errors && (form.email.touched || form.email.dirty) }"
+                  required
+                    />
+          <div class="invalid-feedback" *ngIf="form.email.errors && (form.email.dirty || form.email.touched)">
+            <div *ngIf="form.email.errors.required">* Campo obrigatório</div>
+            <div *ngIf="form.email.errors.email">* Digite um e-mail válido</div>
+          </div>          
+        </div>
+      </div>  
+      <!-- SALVAR -->
+      <div class="text-right">
+        <button type="button" class="btn btn-primary" [disabled]="!data.valid || data.pristine" (click)="submitForm()">
+          Salvar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+===========================================================

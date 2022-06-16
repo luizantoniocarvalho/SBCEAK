@@ -1,0 +1,60 @@
+.example-form
+{
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-ful-width
+{
+  width: 100%;
+}
+
+.mat-form-field {
+  width: 250px;
+}
+
+.mat-card-header
+{
+  background-color: gray !important;
+  padding:5px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+}
+
+.botao-salvar
+{
+  color: white;
+  background-color: rgb(4, 151, 73);
+  font-size: 16px;
+  width: 10em;
+  border-radius: 8px;
+  vertical-align: middle;
+  padding: 2em Opx 2em Opx;
+}
+
+.botao-salvar:hover
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.botao-cancelar-voltar
+{
+  color: white;
+  background-color: rgb(135, 136, 136);
+  font-size: 16px;
+  width: 10em;
+  border-radius: 8px;
+  padding: 2em Opx 2em Opx;
+}
+
+.botao-cancelar-voltar:hover
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

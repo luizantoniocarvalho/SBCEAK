@@ -1,0 +1,42 @@
+CREATE TABLE public."Patrimonios"
+(
+    "IdPatrimonio" integer NOT NULL,
+    "CodigoPatrimonial" integer NOT NULL,
+    "DescricaoPatrimonio" character(50) NOT NULL,
+	"DataAquisicaoPatrimonio" date,
+    "NumeroNotaFiscal" character(10),
+	"DataBaixaPatrimonio" date,
+	"JustificativaBaixa" character(20),
+	"StatusEstoque" boolean,
+    PRIMARY KEY ("IdPatrimonio")
+);
+
+ALTER TABLE public."Patrimonios"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."Patrimonios"
+    IS 'Repositório de dados do Patrimônio.';
+
+COMMENT ON COLUMN public."Patrimonios"."IdPatrimonio"
+    IS 'Código identificador da tabela. Chave Primária.';
+
+COMMENT ON COLUMN public."Patrimonios"."CodigoPatrimonial"
+    IS 'O código do patrimônio adquirido na tabela “codigopatrimonios”.';
+
+COMMENT ON COLUMN public."Patrimonios"."DescricaoPatrimonio"
+    IS 'A descrição do patrimônio.';
+	
+COMMENT ON COLUMN public."Patrimonios"."DataAquisicaoPatrimonio"
+    IS 'A data de aquisição do patrimônio.';	
+	
+COMMENT ON COLUMN public."Patrimonios"."NumeroNotaFiscal"
+    IS 'O número da nota fiscal referente a compra do patrimônio.';	
+	
+COMMENT ON COLUMN public."Patrimonios"."DataBaixaPatrimonio"
+    IS 'A data de baixa do patrimônio.';
+	
+COMMENT ON COLUMN public."Patrimonios"."JustificativaBaixa"
+    IS 'A justificativa da baixa do patrimônio.';	
+	
+COMMENT ON COLUMN public."Patrimonios"."StatusEstoque"
+    IS 'Status do patrimônio se ele está ativo ou inativo. Se for “True” será (ativo), se for “False” será (inativo). O default é “True”.';		

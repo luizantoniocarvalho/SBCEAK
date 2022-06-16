@@ -4,6 +4,31 @@
         <name>SBCEAK.Apresentacao</name>
     </assembly>
     <members>
+        <member name="M:SBCEAK.Apresentacao.Controllers.LogController.GravarLog(SBCEAK.Apresentacao.Models.LogModel)">
+            <summary>
+            Realiza a gravação dos dados de Log de Registro.
+            </summary>
+            <remarks>
+            Parâmetros:
+            
+            Log_id (Tipo: integer - Chave Primária).
+             
+            Dt_Data_Log (Tipo: date - Data e Hora do registro do Log).
+             
+             Pessoa_id (Tipo: integer - Chavre estrangeira referente a tabela Pessoas)
+             
+             Ds_Log_Realizado (Tipo: string - Registra as alterações no registro)
+            </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorTodasOperacoes">
+             <summary>
+             Retorna a lista de Operações.
+             </summary>
+             <remarks>
+             Parâmetros:
+            
+             </remarks>
+        </member>
         <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorNomeOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
              <summary>
              Retorna a lista de Operações.
@@ -15,13 +40,15 @@
              Ds_Operacao (Tipo: String - Descrição da Operação).
              </remarks>
         </member>
-        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorTodasOperacoes">
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.PesquisarPorIdOperacao(System.Int32)">
              <summary>
-             Retorna a lista de Operações.
+             Retorna a operação com o ID passado.
              </summary>
              <remarks>
              Parâmetros:
             
+              
+             operacao_id (Tipo: Integer - ID da Operação).
              </remarks>
         </member>
         <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.GravarOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
@@ -34,6 +61,29 @@
             Operacao_id (Tipo: integer - Chave Primária).
              
             Ds_Operacao (Tipo: String - Descrição da Operação).
+             
+            In_Situacao_Registro (Tipo: Booleano - Status da Operação).
+            </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.AlterarStatusOperacao(System.Int32)">
+             <summary>
+            Realiza a alteração do status de Operação.
+             </summary>
+             <remarks>
+             Parâmetros:
+             
+             
+            Operacao_id (Tipo: integer - Chave Primária).
+             </remarks>
+        </member>
+        <member name="M:SBCEAK.Apresentacao.Controllers.OperacaoController.AlterarOperacao(SBCEAK.Apresentacao.Models.OperacaoModel)">
+            <summary>
+            Realiza a alteração dos dados de Operação.
+            </summary>
+            <remarks>
+            Parâmetros:
+            
+            Operacao_id (Tipo: integer - Chave Primária).
              
             In_Situacao_Registro (Tipo: Booleano - Status da Operação).
             </remarks>
